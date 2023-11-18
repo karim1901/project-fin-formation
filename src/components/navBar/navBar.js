@@ -9,7 +9,7 @@ function NavBar(){
     const screenWidth = window.screen.width;
 
 
-    return <div className="navbar" style={{width:screenWidth}}>
+    return <div className="navbar" >
         <Logo/>
         <Menu/>
         <Profile/>
