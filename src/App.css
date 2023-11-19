@@ -221,13 +221,29 @@ body{
   padding-right: 10px;
   height: 70vh;
   display: grid;
-  grid-template-columns:repeat(4,1fr);
+  grid-template-columns:repeat(5,1fr);
   grid-gap: 10px;
   overflow: hidden;
   overflow-y: scroll;
   /* padding-right:2px ; */
   
 }
+
+@media screen and (max-width:1600px){
+  .container_products .cards{
+    grid-template-columns:repeat(4,1fr);
+
+  }
+}
+
+@media screen and (min-width>1900px){
+  .container_products .cards{
+    grid-template-columns:repeat(6,1fr);
+
+  }
+}
+
+
 
 
 
