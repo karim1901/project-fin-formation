@@ -236,11 +236,22 @@ body{
   }
 }
 
-@media screen and (min-width>1900px){
+@media screen and (width>1900px){
   .container_products .cards{
     grid-template-columns:repeat(6,1fr);
 
   }
+  .container_products .cards .cardProduct .img{
+    height: 500px;
+  }
+}
+
+@media screen and (width>2200px){
+  .container_products .cards{
+    grid-template-columns:repeat(7,1fr);
+
+  }
+
 }
 
 
@@ -267,9 +278,13 @@ body{
 
 
 .container_products .cards .cardProduct .img{
-  width: 100%;
+  /* width: 100%; */
+
+  margin: auto;
   max-width: 250px;
+  min-width: 100%;
   height: 200px;
+  min-height: 50%;
   background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
@@ -347,6 +362,148 @@ body{
   min-width: 350px;
   border-radius: 30px;
   /* display: none; */
+  padding: 40px 20px 40px 20px;
+  overflow: hidden;
+}
+
+
+.container_update .header{
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+
+.container_update .header p{
+  font-size: 20px;
+}
+
+.container_update .header div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.container_update .header div h4{
+  margin-right: 5px;
+}
+
+.container_update .header div ion-icon{
+  font-language-override: inherit;
+}
+
+
+
+.container_update .image{
+  /* background-color: aqua; */
+  margin-top: 40px;
+}
+
+.container_update .image p{
+  font-size: 18px;
+  margin: 10px 0 10px 0;
+}
+
+.container_update .image div{
+  /* width: 100%; */
+
+  margin: auto;
+  max-width: 250px;
+  min-width: 100%;
+  height: 250px;
+  min-height: 50%;
+  background-color: rgb(247, 247, 247);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 5px;
+  border: 1px solid rgb(206, 206, 206);
+}
+
+
+
+.container_update .image div img{
+  width: 100%;
+}
+
+
+.container_update .inputs {
+  /* background-color: aqua; */
+  margin-top: 20px;
+  height: 230px;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(206, 206, 206);
+}
+
+.container_update .inputs label{
+  display: block;
+  font-size: 17px;
+  margin-left: 5px;
+}
+
+
+.container_update .inputs input{
+  display: block;
+  height: 40px;
+  width: 100%;
+  margin: 5px 0 20px 0;
+  outline: none;
+  padding-left: 10px;
+  font-size: 17px;
+}
+
+
+.container_update .inputs textarea{
+  width: 100%;
+  height: 150px;
+  font-size: 15px;
+  padding: 10px;
+  margin: 5px 0 20px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  resize: none;
+}
+
+
+.container_update .inputs .employees{
+  margin-top: 5px;
+  background-color: rgb(255, 255, 255);
+  height: 130px;
+  overflow: hidden;
+  overflow-y: scroll;
+  /* padding-top: 5px; */
+  border-radius: 5px;
+  border: 1px solid rgb(176, 178, 178);
+}
+
+.container_update .inputs .employees .employee{
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.container_update .inputs .employees .employee:hover {
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+}
+
+.container_update .inputs .employees .employee:hover small{
+  color: #000;
+}
+
+
+.container_update .inputs .employees .employee .name{
+  background-color: #e8e8e8;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  border-radius: 15px;
 }
 
 
@@ -359,29 +516,30 @@ body{
 
 
 
+.container_update .btn{
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 0 10px;
+}
 
+.container_update .btn button{
+  width: 48%;
+  height: 40px;
+  border-radius: 20px;
+  /* font-size: 90%; */
+}
 
+.container_update .btn button:first-child{
+  background-color: #ffffff;
+  border: 1px solid rgb(167, 168, 169);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.container_update .btn button:last-child{
+  background-color: #000000;
+  color: #ffffff;
+}
 
 
 
