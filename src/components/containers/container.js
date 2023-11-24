@@ -6,7 +6,7 @@ import Container_update from "./container_products/product/container_update";
 function Containers(){
     return <div className="container">
         <Container_product/>
-        <Container_update/>
+        <Container_update />
     </div>
 }
 
