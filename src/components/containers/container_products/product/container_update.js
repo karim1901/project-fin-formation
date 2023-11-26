@@ -29,10 +29,10 @@ function Container_update(){
 
 
     return <div className="container_update">
-        <Header/>
-        <Image />
-        <Inputs/>
-        <Btn/>
+            <Header/>
+            <Image />
+            <Inputs/>
+            <Btn/>
     </div>
 }
 
