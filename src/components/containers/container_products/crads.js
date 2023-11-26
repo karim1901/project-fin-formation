@@ -1,6 +1,6 @@
 import React from "react"
 import { addActive } from "./addActive"
-import Container_update from "./product/container_update"
+// import Container_update from "./product/container_update"
 
 
 
@@ -20,14 +20,16 @@ function Cards(){
     ]
 
 
+    
 
-    return <div className={`cards`}>
+
+    return <div className='cards'>
         {
             products.map(product =>{
                 return (
                     <div className="cardProduct" key={product.id} id={product.id} onClick={(e)=> {
                         Container_update(e.target.id)
-                        addActive(['.container_products','.container_update','.cards'])
+                        // addActive(['.container_products','.container_update','.cards'])
                         }}>
                         <div className="img" id={product.id}>
                             <img src={product.thumbnail} id={product.id} alt=""/>
@@ -50,4 +52,4 @@ function Cards(){
 }
 
 
-export default Cards
+// export default Cards

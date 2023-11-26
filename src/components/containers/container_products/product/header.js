@@ -1,7 +1,16 @@
 import React from "react";
-import { removeActive } from "../addActive";
 
 function Header(){
+
+
+    const removeActive = (selectors) => {
+        selectors.map(selector =>{
+            const element = document.querySelector(selector);
+            element.classList.remove('active')
+        })
+    };
+    
+
     return <div className="header">
         <p>Edit Product</p>
         <div onClick={()=> removeActive(['.container_products','.container_update','.cards'])}>

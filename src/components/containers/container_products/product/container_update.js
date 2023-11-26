@@ -7,11 +7,9 @@ import Btn from "./btn";
 
 
 
-function Container_update(id){
 
 
-    const Id = !isNaN(id) ? id : 1;
-    console.log(id,Id)
+function Container_update(){
 
     const products =[
         {id:1,title:"iPhone 9",description:"An apple mobile which is nothing like apple",price:549,sold:232,stock:94,brand:"Apple",category:"smartphones",thumbnail:"https://m.media-amazon.com/images/I/611mRs-imxL.jpg"},
@@ -26,15 +24,13 @@ function Container_update(id){
     ]
 
 
-    const product = products.filter(product => product.id==Id)[0]
-
 
 
 
 
     return <div className="container_update">
         <Header/>
-        <Image url ={product.thumbnail}/>
+        <Image />
         <Inputs/>
         <Btn/>
     </div>
