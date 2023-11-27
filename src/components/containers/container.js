@@ -101,8 +101,8 @@ function Containers(){
         <div className="container_update">
             {productUpdate}
         </div>
-        
-~    </div>
+    
+    </div>
 }
 
 export default Containers

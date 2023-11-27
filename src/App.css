@@ -94,7 +94,7 @@ body{
 
 .container{
   margin-top: 5px;
-  width: 100%;
+  min-width: 1500px;
   height: 100vh;
   max-height: 1100px;
   background-color: rgb(230, 236, 237);
@@ -540,7 +540,7 @@ body{
 }
 
 
-/* .menuFooter{
+.menuFooter{
   margin-top: 20px;
   background-color: rgb(255, 255, 255);
   height: 40px;
@@ -565,4 +565,4 @@ body{
 .menuFooter ul li:first-child{
 
 }
- */
+
