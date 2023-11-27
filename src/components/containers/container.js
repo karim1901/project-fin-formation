@@ -43,12 +43,16 @@ function Containers(){
     const showUpdate =(id)=> {
         const pro = products.find(product => product.id == id )
 
-        const show = <div>
+        const show = <>
+
             <Header  />
-            <Image url = {pro.thumbnail} />
-            <Inputs product={pro} />
-            <Btn/>
-        </div>
+            <div className="infoProduct">
+                <Image url = {pro.thumbnail} />
+                <Inputs product={pro} />
+                <Btn/>
+            </div>
+
+        </>
 
 
         setproductUpdate(show)
@@ -98,7 +102,7 @@ function Containers(){
             {productUpdate}
         </div>
         
-    </div>
+~    </div>
 }
 
 export default Containers

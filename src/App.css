@@ -12,7 +12,6 @@ body{
 }
 
 #root{
-  background-color: #000;
   height: 100vh;
 }
 
@@ -36,7 +35,7 @@ body{
   width: 40px;
   height: 40px;
   margin-right: 10px;
-  /* background-color: aqua; */
+
 
 }
 
@@ -328,6 +327,9 @@ body{
 }
 
 
+.container_update img{
+  width: 100px;
+}
 
 
 
@@ -339,18 +341,15 @@ body{
   border-radius: 30px;
   padding: 40px 20px 40px 20px;
   overflow: hidden;
-  /* display: none; */
+  display: none;
 }
+
+ 
+
 .container_update.active{
   display: block;
 }
 
-
-.container_update .infoProduct{
-  background-color: #000000;
-  padding: 5px;
-  display: flex;
-}
 
 
 .container_update .header{
@@ -359,9 +358,11 @@ body{
   background-color: #ffffff;
 }
 
+
 .container_update .header p{
   font-size: 20px;
 }
+
 
 .container_update .header div{
   display: flex;
@@ -380,23 +381,34 @@ body{
 }
 
 
+.container_update .infoProduct{
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  padding: 5px;
+  display: grid;
+  align-content: space-between;
+}
+
+
+
 
 .container_update .image{
-
   margin-top: 40px;
 }
+
 
 .container_update .image p{
   font-size: 18px;
   margin: 10px 0 10px 0;
 }
 
-.container_update .image div{
 
+
+.container_update .image div{
   margin: auto;
   max-width: 250px;
   min-width: 100%;
-  height: 250px;
+  height: 280px;
   min-height: 50%;
   background-color: rgb(247, 247, 247);
   display: flex;
@@ -404,19 +416,23 @@ body{
   align-items: center;
   overflow: hidden;
   border-radius: 5px;
-  border: 1px solid rgb(206, 206, 206);
+  /* padding: 10px; */
+  /* border: 1px solid rgb(206, 206, 206); */
 }
 
 
 
 .container_update .image div img{
+  /* margin: 10px; */
   width: 100%;
+  height: 100%;
+  border-radius: 5px;
 }
 
 
 .container_update .inputs {
   margin-top: 20px;
-  height: 230px;
+  height: 80%;
   overflow: hidden;
   overflow-y: scroll;
   padding: 10px;
@@ -456,7 +472,7 @@ body{
 .container_update .inputs .employees{
   margin-top: 5px;
   background-color: rgb(255, 255, 255);
-  height: 130px;
+  height: 180px;
   overflow: hidden;
   overflow-y: scroll;
   border-radius: 5px;
@@ -503,7 +519,7 @@ body{
 .container_update .btn{
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   padding: 0 10px;
 }
 
@@ -524,8 +540,7 @@ body{
 }
 
 
-
-.menuFooter{
+/* .menuFooter{
   margin-top: 20px;
   background-color: rgb(255, 255, 255);
   height: 40px;
@@ -550,4 +565,4 @@ body{
 .menuFooter ul li:first-child{
 
 }
-
+ */
