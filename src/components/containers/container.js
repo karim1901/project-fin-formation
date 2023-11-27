@@ -98,6 +98,8 @@ function Containers(){
             </div>
             <MenuFooter/>
         </div>
+
+        
         <div className="container_update">
             {productUpdate}
         </div>

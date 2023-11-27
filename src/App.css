@@ -95,7 +95,7 @@ body{
 .container{
   margin-top: 5px;
   min-width: 1500px;
-  height: 100vh;
+  /* height: 100vh; */
   max-height: 1100px;
   background-color: rgb(230, 236, 237);
   display: flex;
