@@ -13,7 +13,7 @@ import Btn from "./container_products/product/btn";
 
 
 
-function Containers(){
+function ContainerProducts(){
 
     const [productUpdate ,setproductUpdate] = useState('')
     const [action ,setAction ] = useState('')
@@ -107,4 +107,4 @@ function Containers(){
     </div>
 }
 
-export default Containers
+export default ContainerProducts

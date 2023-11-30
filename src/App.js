@@ -1,16 +1,29 @@
 import React from "react";
 import './App.css' 
-import NavBar from "./components/navBar/navBar";
-import Containers from "./components/containers/container";
-
+import NavBar from "./navBar/navBar";
+import { BrowserRouter,NavLink,Route, Routes } from "react-router-dom";
+import ContainerProducts from "./page_products/containers/containerProducts";
+import ConatinerDashboard from "./page_dashbord/containerDashboard";
 
 
 function App() {
   return (
-    <div className="App">
-      < NavBar/>
-      <Containers/>
-    </div>
+    <BrowserRouter>
+
+      <div className="App">
+        <NavBar/>
+        
+
+        
+      </div>
+
+      <Routes>
+          
+          <Route path="/" element={<ConatinerDashboard/>} />
+          <Route path="/products" element={<ContainerProducts/>} />
+        </Routes>
+    </BrowserRouter>
+
   );
 }
 
