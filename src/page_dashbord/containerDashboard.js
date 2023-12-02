@@ -1,5 +1,6 @@
 import React from "react";
 import { cancelling, confirmed, mystore, orders, star } from "./icon";
+import { NavLink } from "react-router-dom";
 
 
 function ConatinerDashboard(){
@@ -13,14 +14,16 @@ function ConatinerDashboard(){
                 </div>
                 <p>346</p>
             </div>
-
-            <div className="card">
-                <div>
-                    <p>Orders</p>
-                    {orders}
+            <NavLink to='/orders'>
+                <div className="card">
+                    <div>
+                        <p>Orders</p>
+                        {orders}
+                    </div>
+                    <p>346</p>
                 </div>
-                <p>346</p>
-            </div>
+            </NavLink>
+
             <div className="card">
                 <div>
                     <p>Confirmed</p>

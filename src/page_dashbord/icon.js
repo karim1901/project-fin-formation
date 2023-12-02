@@ -1,7 +1,6 @@
 import React from "react"
 
 
-
 export const mystore =<svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none">
 <g filter="url(#filter0_d_2_273)">
   <g clip-path="url(#clip0_2_273)">
@@ -120,4 +119,19 @@ export const cancelling = <svg xmlns="http://www.w3.org/2000/svg" width="70" hei
 
 export const star = <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
 <path d="M13.1932 16.3159C12.6246 16.7346 8.97583 14.0803 8.27701 14.0745C7.57819 14.0687 3.88836 16.6619 3.32634 16.2338C2.76432 15.8057 4.08561 11.4082 3.87504 10.7214C3.66448 10.0345 0.131694 7.21834 0.352991 6.53504C0.574335 5.85173 5.03968 5.78826 5.60834 5.36954C6.177 4.95087 7.68348 0.617178 8.38235 0.622961C9.08112 0.628795 10.5195 4.98698 11.0816 5.4151C11.6436 5.84318 16.1074 5.98098 16.318 6.66786C16.5286 7.35473 12.9522 10.1117 12.7309 10.795C12.5096 11.4784 13.7619 15.8971 13.1932 16.3159Z" fill="#F8B84E"/>
+</svg>
+
+export const pencil = <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+<mask id="mask0_22_764"  maskUnits="userSpaceOnUse" x="4" y="1" width="9" height="9">
+  <path d="M13 1H4V10H13V1Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_22_764)">
+  <path d="M6.86522 8.72687L5.27319 7.13484L9.67384 2.73419L11.2659 4.32622L6.86522 8.72687Z" fill="#C6C6C6"/>
+  <path d="M12.292 2.55378L11.4462 1.70802C11.2401 1.50194 10.8915 1.51649 10.6674 1.74054L9.87286 2.53513L11.4649 4.12714L12.2595 3.33258C12.4835 3.10853 12.498 2.75985 12.292 2.55378Z" fill="#C6C6C6"/>
+  <path d="M5.12537 7.38528L4.5625 9.43749L6.61452 8.87463L5.12537 7.38528Z" fill="#C6C6C6"/>
+</g>
+<path d="M1.5 2V13" stroke="#C6C6C6"/>
+<path d="M9.00658 1.49997L1.00665 1.60524" stroke="#C6C6C6"/>
+<path d="M13.0062 12.5L1.00616 12.6485" stroke="#C6C6C6"/>
+<path d="M12.5 5V12" stroke="#C6C6C6"/>
 </svg>
