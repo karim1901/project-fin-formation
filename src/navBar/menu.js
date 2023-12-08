@@ -32,8 +32,10 @@ function Menu(){
                 <p>Analtics</p>
             </li>
             <li>
-                <ion-icon name="people-circle-outline"></ion-icon>
-                <p>Employees</p>
+                <NavLink to='/employees'>
+                    <ion-icon name="people-circle-outline"></ion-icon>
+                    <p>Employees</p>
+                </NavLink>
             </li>
             <li>
                 <ion-icon name="settings-outline"></ion-icon>

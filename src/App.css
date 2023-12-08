@@ -852,6 +852,11 @@ a{
   margin-bottom: 2px;
 }
 
+.containerOrders .cards .card.cancelling{
+  background-color: #fbe5e5;
+}
+
+
 .containerOrders .cards .card .img{
   width: 150px;
   height: 150px;
@@ -924,6 +929,22 @@ a{
 .containerOrders .cards .card .infoCustomer{
   padding: 10px 15px;
 }
+
+
+.containerOrders .cards .card .infoCustomer div{
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  height: 25px;
+}
+
+
+.containerOrders .cards .card .infoCustomer div svg{
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+}
+
 .containerOrders .cards .card .infoCustomer p{
   font-size: 20px;
   /* font-weight: 600; */
@@ -954,5 +975,141 @@ a{
   font-size: 16px;
   outline: none;
   background-color: #EEFCF8;
-  
+  padding-left: 10px;
+
 }
+
+.containerOrders .cards .card.cancelling .infoCustomer table tr input{
+  background-color: #fbe5e5;
+}
+
+
+
+
+
+
+
+.containerEmployees{
+  background-color: #ffffff;
+  min-width: 1500px;
+  margin-top: 5px;
+  border-radius: 30px;
+  padding:   30px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+.containerEmployees .header{
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.containerEmployees .header p{
+  font-size: 25px;
+}
+ 
+
+.containerEmployees .header .search_btn{
+  display: flex;
+  align-items: center;
+}
+
+.containerEmployees .header .search_btn input{
+  width: 350px;
+  height: 40px;
+  margin-right: 100px;
+  padding-left: 45px;
+  font-size: 17px;
+  border: none;
+  border-radius:20px;
+  background-color: aliceblue;
+  outline: none;
+  /* box-shadow: 0 2px 10px rgb(210, 211, 211); */
+}
+.containerEmployees .header .search_btn ion-icon{
+  font-size: 25px;
+  color: rgb(167, 168, 169);
+  position: absolute;
+  margin-left: 10px;
+}
+
+.containerEmployees .header .search_btn div{
+  background-color: white;
+  border-left: 1px solid rgb(210, 211, 211);
+  padding-left: 30px;
+}
+
+
+.containerEmployees .header .search_btn div button{
+  padding: 0 20px 0 20px;
+  font-size: 17px;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: white;
+}
+
+
+
+ .containerEmployees .employees{
+  margin-top: 50px;
+  padding: 3px;
+  background-color: #ffffff;
+  max-height:85%;
+  overflow: hidden;
+}
+
+.containerEmployees .employees table{
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+}
+
+
+.containerEmployees .employees table th ,.containerEmployees .employees table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 2px solid #ffffff;
+}
+
+.containerEmployees .employees tbody {
+  display: block;
+  max-height: 500px; 
+  overflow-y: auto;
+}
+
+.containerEmployees .employees thead, tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+
+
+.containerEmployees .employees table th{
+  text-align: start;
+  background-color: #ffffff;
+  padding-left: 10px;
+  height: 40px;
+  font-weight:100 ;
+  font-size: 18px;
+
+}
+
+.containerEmployees .employees table td{
+  height: 40px;
+  padding-left: 10px;
+  font-size: 17px;
+
+  background-color: #EEFCF8;
+}
+
+.containerEmployees .employees table td ion-icon{
+  color: rgb(255, 24, 24);
+  margin-left: 100px;
+}
+

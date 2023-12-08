@@ -23,21 +23,26 @@ function ConatinerDashboard(){
                     <p>346</p>
                 </div>
             </NavLink>
+            <NavLink to='/confirmed'>
+                <div className="card">
+                    <div>
+                        <p>Confirmed</p>
+                        {confirmed}
+                    </div>
+                    <p>346</p>
+                </div>
+            </NavLink>
 
-            <div className="card">
-                <div>
-                    <p>Confirmed</p>
-                    {confirmed}
+            <NavLink to='/cancelling'>
+                <div className="card">
+                    <div>
+                        <p>Cancelling</p>
+                        {cancelling}
+                    </div>
+                    <p>346</p>
                 </div>
-                <p>346</p>
-            </div>
-            <div className="card">
-                <div>
-                    <p>Cancelling</p>
-                    {cancelling}
-                </div>
-                <p>346</p>
-            </div>
+            </NavLink>
+
         </div>
 
         <div className="theBest">

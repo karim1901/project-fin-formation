@@ -1,10 +1,11 @@
 import React from "react";
 import { cancelling, confirmed, mystore, orders, update } from "../page_dashbord/icon";
+import { NavLink } from "react-router-dom";
 
 
-function Header(){
+function Header({title}){
     return  <div className="header">
-        <p>Orders</p>
+        <p>{title}</p>
         <div className="menu">
             <div className="element" >
                 <div>
@@ -12,24 +13,33 @@ function Header(){
                 </div>
                 <p>My store</p>
             </div>
-            <div className="element" >
-                <div>
-                    {orders}
+            <NavLink to='/orders'>
+                <div className="element" >
+                    <div>
+                        {orders}
+                    </div>
+                    <p>Orders</p>
                 </div>
-                <p>Orders</p>
-            </div>
-            <div className="element" >
-                <div>
-                    {confirmed}
+            </NavLink>
+
+            <NavLink to='/confirmed'>
+                <div className="element" >
+                    <div>
+                        {confirmed}
+                    </div>
+                    <p>Confirmed</p>
                 </div>
-                <p>Confirmed</p>
-            </div>
-            <div className="element" >
-                <div>
-                    {cancelling}
+            </NavLink>
+
+            <NavLink to='/cancelling'>
+                <div className="element" >
+                    <div>
+                        {cancelling}
+                    </div>
+                    <p>Cancelling</p>
                 </div>
-                <p>Cancelling</p>
-            </div>
+            </NavLink>
+
         </div>
     </div>
 
